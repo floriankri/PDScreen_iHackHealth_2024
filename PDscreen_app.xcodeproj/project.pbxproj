@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C7023412B66E34000B29071 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7023402B66E34000B29071 /* TimerView.swift */; };
 		7CC892FA2B64B9A900ECCDAE /* PDscreen_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC892F92B64B9A900ECCDAE /* PDscreen_appApp.swift */; };
 		7CC892FC2B64B9A900ECCDAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC892FB2B64B9A900ECCDAE /* ContentView.swift */; };
 		7CC892FE2B64B9AA00ECCDAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC892FD2B64B9AA00ECCDAE /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C7023402B66E34000B29071 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		7CC892F62B64B9A900ECCDAE /* PDscreen_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDscreen_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC892F92B64B9A900ECCDAE /* PDscreen_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDscreen_appApp.swift; sourceTree = "<group>"; };
 		7CC892FB2B64B9A900ECCDAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				7CC892F92B64B9A900ECCDAE /* PDscreen_appApp.swift */,
 				7CC892FB2B64B9A900ECCDAE /* ContentView.swift */,
 				7CC892FD2B64B9AA00ECCDAE /* Assets.xcassets */,
+				7C7023402B66E34000B29071 /* TimerView.swift */,
 				7CC892FF2B64B9AA00ECCDAE /* Preview Content */,
 			);
 			path = PDscreen_app;
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C7023412B66E34000B29071 /* TimerView.swift in Sources */,
 				7CC892FC2B64B9A900ECCDAE /* ContentView.swift in Sources */,
 				7CC892FA2B64B9A900ECCDAE /* PDscreen_appApp.swift in Sources */,
 			);
