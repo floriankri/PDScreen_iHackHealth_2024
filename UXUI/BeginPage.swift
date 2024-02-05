@@ -25,12 +25,8 @@ struct BeginPage: View {
                     .padding()
                     Spacer() // Push to the center
                     
-                    //begin screening button!!
-                    Button(action: {
-                        // Handle button action here
-                        print("Button pressed!")
-                    }) {
-                        
+                    NavigationLink(destination: Gait())  {
+                        // Your button action here
                         //begin screening box!
                         HStack {
                             Image(systemName: "figure.arms.open")
@@ -51,7 +47,11 @@ struct BeginPage: View {
                                 .cornerRadius(15) // Set corner radius if needed
                         )
                         .padding() // Add padding as needed
+                        
                     }
+                    .navigationBarTitle("", displayMode: .inline)
+                    .navigationBarHidden(true)
+                    .navigationBarBackButtonHidden(true)
                     
                     Spacer() // Push to the center
                     
