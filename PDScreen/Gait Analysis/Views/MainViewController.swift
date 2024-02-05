@@ -211,7 +211,7 @@ extension MainViewController {
     ///   - confidence: The prediction's confidence value.
     private func updateUILabelsWithPrediction(_ prediction: ActionPrediction) {
         // Update the UI's prediction label on the main thread.
-        DispatchQueue.main.async { self.actionLabel.text = prediction.label }
+        DispatchQueue.main.async { self.actionLabel.text = "hello"}// prediction.label }
 
         // Update the UI's confidence label on the main thread.
         let confidenceString = prediction.confidenceString ?? "Observing..."

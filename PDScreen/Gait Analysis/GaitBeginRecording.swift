@@ -42,7 +42,7 @@ struct GaitBeginRecording: View {
                     .padding(10.0)
                     .overlay(
                         Text("""
-                           Stand up then walk away from the iPad taking about 5 steps then turn around and walk back towards the iPad.
+                           Place the iPad standing up on a surface horizontally. Click 'start recording' and move far enough away from the iPad so that your feet are in the frame. Walk from one side of the iPad to the other so that you appear to walk across the screen.
                            
                            """)
                         .font(.system(size: 30))
