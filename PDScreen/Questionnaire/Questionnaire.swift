@@ -40,14 +40,14 @@ struct Questionnaire: View {
                         self.didTap4 = false
                     }) {
                         Text("Yes")
-                            .frame(width: 500 , height: 50, alignment: .center)
+                            .frame(width: 500 , height: 70, alignment: .center)
                     }
                     .foregroundColor(didTap1 ? Color.orange : Color.white)
                     .background(didTap1 ? Color.orange.opacity(0.2) : Color.orange)
                     //.border(.orange)
                     .font(.title)
                     .fontWeight(.heavy)
-                    .cornerRadius(25)
+                    .cornerRadius(20)
                     
                     .padding()
                     
@@ -58,13 +58,13 @@ struct Questionnaire: View {
                         self.didTap4 = false
                     }) {
                         Text("No")
-                            .frame(width: 500 , height: 50, alignment: .center)
+                            .frame(width: 500 , height: 70, alignment: .center)
                     }
                     .foregroundColor(didTap2 ? Color.orange : Color.white)
                     .background(didTap2 ? Color.orange.opacity(0.2) : Color.orange)
                     .font(.title)
                     .fontWeight(.heavy)
-                    .cornerRadius(25)
+                    .cornerRadius(20)
                     .padding()
                     
                     Button(action: {
@@ -74,13 +74,13 @@ struct Questionnaire: View {
                         self.didTap4 = false
                     }) {
                         Text("Not sure")
-                            .frame(width: 500 , height: 50, alignment: .center)
+                            .frame(width: 500 , height: 70, alignment: .center)
                     }
                     .foregroundColor(didTap3 ? Color.orange : Color.white)
                     .background(didTap3 ? Color.orange.opacity(0.2) : Color.orange)
                     .font(.title)
                     .fontWeight(.heavy)
-                    .cornerRadius(25)
+                    .cornerRadius(20)
                     .padding()
                     
                     Button(action: {
@@ -90,13 +90,13 @@ struct Questionnaire: View {
                         self.didTap3 = false
                     }) {
                         Text("Prefer not to answer")
-                            .frame(width: 500 , height: 50, alignment: .center)
+                            .frame(width: 500 , height: 70, alignment: .center)
                     }
                     .foregroundColor(didTap4 ? Color.orange : Color.white)
                     .background(didTap4 ? Color.orange.opacity(0.2) : Color.orange)
                     .font(.title)
                     .fontWeight(.heavy)
-                    .cornerRadius(25)
+                    .cornerRadius(20)
                     .padding()
                     
                     Text("   ")
@@ -109,7 +109,7 @@ struct Questionnaire: View {
                     .foregroundColor(.black)
                     .background(.white)
                     .font(.title)
-                    .cornerRadius(25)
+                    .cornerRadius(30)
                     .padding()
                 }
             }
