@@ -24,10 +24,11 @@
 		339B7BB42B6E0589003A55D1 /* SpeechReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B7BB32B6E0589003A55D1 /* SpeechReturn.swift */; };
 		339B7BB62B6E06AB003A55D1 /* FingerTapReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B7BB52B6E06AB003A55D1 /* FingerTapReturn.swift */; };
 		339B7BB82B6E07D2003A55D1 /* Questionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B7BB72B6E07D2003A55D1 /* Questionnaire.swift */; };
+		7CE8C65A2B7065AA004CC37F /* GuessMyExercise in Resources */ = {isa = PBXBuildFile; fileRef = 7CE8C6592B7065AA004CC37F /* GuessMyExercise */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		339B7B8A2B6DC9E6003A55D1 /* UXUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UXUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		339B7B8A2B6DC9E6003A55D1 /* PDScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		339B7B8D2B6DC9E6003A55D1 /* UXUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXUIApp.swift; sourceTree = "<group>"; };
 		339B7B912B6DC9E7003A55D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		339B7B942B6DC9E7003A55D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +46,7 @@
 		339B7BB32B6E0589003A55D1 /* SpeechReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechReturn.swift; sourceTree = "<group>"; };
 		339B7BB52B6E06AB003A55D1 /* FingerTapReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerTapReturn.swift; sourceTree = "<group>"; };
 		339B7BB72B6E07D2003A55D1 /* Questionnaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questionnaire.swift; sourceTree = "<group>"; };
+		7CE8C6592B7065AA004CC37F /* GuessMyExercise */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GuessMyExercise; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,7 @@
 		339B7B812B6DC9E6003A55D1 = {
 			isa = PBXGroup;
 			children = (
-				339B7B8C2B6DC9E6003A55D1 /* UXUI */,
+				339B7B8C2B6DC9E6003A55D1 /* PDScreen */,
 				339B7B8B2B6DC9E6003A55D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,12 +71,12 @@
 		339B7B8B2B6DC9E6003A55D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				339B7B8A2B6DC9E6003A55D1 /* UXUI.app */,
+				339B7B8A2B6DC9E6003A55D1 /* PDScreen.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		339B7B8C2B6DC9E6003A55D1 /* UXUI */ = {
+		339B7B8C2B6DC9E6003A55D1 /* PDScreen */ = {
 			isa = PBXGroup;
 			children = (
 				339B7B8D2B6DC9E6003A55D1 /* UXUIApp.swift */,
@@ -83,19 +85,13 @@
 				339B7B9F2B6DCB27003A55D1 /* AboutPage.swift */,
 				339B7BB72B6E07D2003A55D1 /* Questionnaire.swift */,
 				339B7BB12B6E0128003A55D1 /* Return Page.swift */,
-				339B7BA92B6DEF02003A55D1 /* Speech.swift */,
-				339B7BAD2B6DF3A3003A55D1 /* Speech Prompt.swift */,
-				339B7BAF2B6DFD52003A55D1 /* SpeechRecording.swift */,
-				339B7BB32B6E0589003A55D1 /* SpeechReturn.swift */,
-				339B7BA12B6DCB5F003A55D1 /* FingerTap.swift */,
-				339B7BA32B6DCF26003A55D1 /* FingerBeginRecording.swift */,
-				339B7BB52B6E06AB003A55D1 /* FingerTapReturn.swift */,
-				339B7BA52B6DDD20003A55D1 /* Gait.swift */,
-				339B7BA72B6DE0DD003A55D1 /* GaitBeginRecording.swift */,
+				7CE8C6562B7064A7004CC37F /* Gait Analysis */,
+				7CE8C6572B706512004CC37F /* Speech */,
+				7CE8C6582B706521004CC37F /* FingerTap */,
 				339B7B912B6DC9E7003A55D1 /* Assets.xcassets */,
 				339B7B932B6DC9E7003A55D1 /* Preview Content */,
 			);
-			path = UXUI;
+			path = PDScreen;
 			sourceTree = "<group>";
 		};
 		339B7B932B6DC9E7003A55D1 /* Preview Content */ = {
@@ -106,12 +102,43 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7CE8C6562B7064A7004CC37F /* Gait Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				7CE8C6592B7065AA004CC37F /* GuessMyExercise */,
+				339B7BA52B6DDD20003A55D1 /* Gait.swift */,
+				339B7BA72B6DE0DD003A55D1 /* GaitBeginRecording.swift */,
+			);
+			path = "Gait Analysis";
+			sourceTree = "<group>";
+		};
+		7CE8C6572B706512004CC37F /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				339B7BA92B6DEF02003A55D1 /* Speech.swift */,
+				339B7BAD2B6DF3A3003A55D1 /* Speech Prompt.swift */,
+				339B7BAF2B6DFD52003A55D1 /* SpeechRecording.swift */,
+				339B7BB32B6E0589003A55D1 /* SpeechReturn.swift */,
+			);
+			path = Speech;
+			sourceTree = "<group>";
+		};
+		7CE8C6582B706521004CC37F /* FingerTap */ = {
+			isa = PBXGroup;
+			children = (
+				339B7BA12B6DCB5F003A55D1 /* FingerTap.swift */,
+				339B7BA32B6DCF26003A55D1 /* FingerBeginRecording.swift */,
+				339B7BB52B6E06AB003A55D1 /* FingerTapReturn.swift */,
+			);
+			path = FingerTap;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		339B7B892B6DC9E6003A55D1 /* UXUI */ = {
+		339B7B892B6DC9E6003A55D1 /* PDScreen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 339B7B982B6DC9E7003A55D1 /* Build configuration list for PBXNativeTarget "UXUI" */;
+			buildConfigurationList = 339B7B982B6DC9E7003A55D1 /* Build configuration list for PBXNativeTarget "PDScreen" */;
 			buildPhases = (
 				339B7B862B6DC9E6003A55D1 /* Sources */,
 				339B7B872B6DC9E6003A55D1 /* Frameworks */,
@@ -121,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = UXUI;
+			name = PDScreen;
 			productName = UXUI;
-			productReference = 339B7B8A2B6DC9E6003A55D1 /* UXUI.app */;
+			productReference = 339B7B8A2B6DC9E6003A55D1 /* PDScreen.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 339B7B852B6DC9E6003A55D1 /* Build configuration list for PBXProject "UXUI" */;
+			buildConfigurationList = 339B7B852B6DC9E6003A55D1 /* Build configuration list for PBXProject "PDScreen" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -154,7 +181,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				339B7B892B6DC9E6003A55D1 /* UXUI */,
+				339B7B892B6DC9E6003A55D1 /* PDScreen */,
 			);
 		};
 /* End PBXProject section */
@@ -165,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				339B7B952B6DC9E7003A55D1 /* Preview Assets.xcassets in Resources */,
+				7CE8C65A2B7065AA004CC37F /* GuessMyExercise in Resources */,
 				339B7B922B6DC9E7003A55D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +351,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UXUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PDScreen/Preview Content\"";
+				DEVELOPMENT_TEAM = LAUY34RP9T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -351,7 +380,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UXUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PDScreen/Preview Content\"";
+				DEVELOPMENT_TEAM = LAUY34RP9T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -375,7 +405,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		339B7B852B6DC9E6003A55D1 /* Build configuration list for PBXProject "UXUI" */ = {
+		339B7B852B6DC9E6003A55D1 /* Build configuration list for PBXProject "PDScreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				339B7B962B6DC9E7003A55D1 /* Debug */,
@@ -384,7 +414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		339B7B982B6DC9E7003A55D1 /* Build configuration list for PBXNativeTarget "UXUI" */ = {
+		339B7B982B6DC9E7003A55D1 /* Build configuration list for PBXNativeTarget "PDScreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				339B7B992B6DC9E7003A55D1 /* Debug */,
