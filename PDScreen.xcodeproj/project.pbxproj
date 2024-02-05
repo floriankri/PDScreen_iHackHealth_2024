@@ -125,7 +125,6 @@
 				339B7B9B2B6DCA0A003A55D1 /* MainPage.swift */,
 				339B7B9D2B6DCAD7003A55D1 /* BeginPage.swift */,
 				339B7B9F2B6DCB27003A55D1 /* AboutPage.swift */,
-				339B7BB12B6E0128003A55D1 /* Return Page.swift */,
 				7CB9FA5E2B706B8800A1725B /* Questionnaire */,
 				7CB9FA0B2B706B0100A1725B /* FingerTap */,
 				7CB9FA142B706B0100A1725B /* Gait Analysis */,
@@ -187,6 +186,7 @@
 				339B7BB72B6E07D2003A55D1 /* Questionnaire.swift */,
 				7CB9FA082B706AD300A1725B /* Questionnaire_2.swift */,
 				7CB9FA072B706AD300A1725B /* Questionnaire_3.swift */,
+				339B7BB12B6E0128003A55D1 /* Return Page.swift */,
 			);
 			path = Questionnaire;
 			sourceTree = "<group>";
@@ -515,6 +515,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture input for an Action Classifier model ";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses the speech recognition.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -547,6 +549,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture input for an Action Classifier model ";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses the speech recognition.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
