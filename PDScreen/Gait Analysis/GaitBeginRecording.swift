@@ -56,7 +56,7 @@ struct GaitBeginRecording: View {
                 Spacer()
                     .padding()
                 
-                NavigationLink(destination: MainPage())  {
+                NavigationLink(destination: Gait())  {
                     // Your button action here
                     HStack{
                         Image(systemName: "video.fill")
