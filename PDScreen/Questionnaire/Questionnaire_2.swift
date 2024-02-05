@@ -9,7 +9,10 @@ import Foundation
 import SwiftUI
 
 struct Questionnaire_2: View {
+    @State private var toPage3 = false
+    
     var body: some View {
+        NavigationStack{
         ZStack{
             LinearGradient(gradient: Gradient(colors: [Color.white,Color.white, Color.mint]),
                            startPoint: .topLeading,
@@ -78,9 +81,8 @@ struct Questionnaire_2: View {
                 
                 Text("   ")
                 
-                Button(action: {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }) {
+                Button(action: {toPage3 = true})
+                {
                     Text("Continue")
                         .frame(width: 200 , height: 50, alignment: .center)
                 }
@@ -90,6 +92,10 @@ struct Questionnaire_2: View {
                 .cornerRadius(25)
                 .padding()
             }
+        }
+        .navigationDestination(isPresented: $toPage3) {
+            Questionnaire_3()
+        }
         }
     }
 }
