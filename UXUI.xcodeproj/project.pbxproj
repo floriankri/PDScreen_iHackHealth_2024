@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0EF4772B70683900E20B35 /* Questionnaire_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0EF4762B70683800E20B35 /* Questionnaire_2.swift */; };
+		2B0EF4792B70691900E20B35 /* Questionnaire_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0EF4782B70691900E20B35 /* Questionnaire_3.swift */; };
 		339B7B8E2B6DC9E6003A55D1 /* UXUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B7B8D2B6DC9E6003A55D1 /* UXUIApp.swift */; };
 		339B7B922B6DC9E7003A55D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339B7B912B6DC9E7003A55D1 /* Assets.xcassets */; };
 		339B7B952B6DC9E7003A55D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339B7B942B6DC9E7003A55D1 /* Preview Assets.xcassets */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B0EF4762B70683800E20B35 /* Questionnaire_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questionnaire_2.swift; sourceTree = "<group>"; };
+		2B0EF4782B70691900E20B35 /* Questionnaire_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questionnaire_3.swift; sourceTree = "<group>"; };
 		339B7B8A2B6DC9E6003A55D1 /* UXUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UXUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		339B7B8D2B6DC9E6003A55D1 /* UXUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXUIApp.swift; sourceTree = "<group>"; };
 		339B7B912B6DC9E7003A55D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				339B7B9D2B6DCAD7003A55D1 /* BeginPage.swift */,
 				339B7B9F2B6DCB27003A55D1 /* AboutPage.swift */,
 				339B7BB72B6E07D2003A55D1 /* Questionnaire.swift */,
+				2B0EF4762B70683800E20B35 /* Questionnaire_2.swift */,
+				2B0EF4782B70691900E20B35 /* Questionnaire_3.swift */,
 				339B7BB12B6E0128003A55D1 /* Return Page.swift */,
 				339B7BA92B6DEF02003A55D1 /* Speech.swift */,
 				339B7BAD2B6DF3A3003A55D1 /* Speech Prompt.swift */,
@@ -184,6 +190,7 @@
 				339B7BA82B6DE0DD003A55D1 /* GaitBeginRecording.swift in Sources */,
 				339B7BA42B6DCF26003A55D1 /* FingerBeginRecording.swift in Sources */,
 				339B7BB22B6E0128003A55D1 /* Return Page.swift in Sources */,
+				2B0EF4772B70683900E20B35 /* Questionnaire_2.swift in Sources */,
 				339B7BA62B6DDD20003A55D1 /* Gait.swift in Sources */,
 				339B7BAE2B6DF3A3003A55D1 /* Speech Prompt.swift in Sources */,
 				339B7BB02B6DFD52003A55D1 /* SpeechRecording.swift in Sources */,
@@ -191,6 +198,7 @@
 				339B7B9E2B6DCAD7003A55D1 /* BeginPage.swift in Sources */,
 				339B7BB62B6E06AB003A55D1 /* FingerTapReturn.swift in Sources */,
 				339B7BA22B6DCB5F003A55D1 /* FingerTap.swift in Sources */,
+				2B0EF4792B70691900E20B35 /* Questionnaire_3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

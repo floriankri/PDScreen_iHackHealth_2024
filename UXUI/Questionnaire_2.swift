@@ -1,15 +1,14 @@
 //
-//  ContentView.swift
-//  fighting park's dizzy wit Andrew and Molly
+//  Questionnaire_2.swift
+//  UXUI
 //
-//  Created by Molly Bradach on 1/29/24.
+//  Created by Molly Bradach on 2/4/24.
 //
 
+import Foundation
 import SwiftUI
-//import ResearchKit
 
-
-struct Questionnaire: View {
+struct Questionnaire_2: View {
     var body: some View {
         ZStack{
             LinearGradient(gradient: Gradient(colors: [Color.white,Color.white, Color.mint]),
@@ -19,7 +18,7 @@ struct Questionnaire: View {
             
             VStack {
                 
-                Text("Do you have a diagnosis of REM behavior disorder, also known as RBD?")
+                Text("Have you ever been told, or suspected yourself, that you seem to &quot;act out your dreams while asleep (for example punching, flailing your arms in the air, making running movements, etc.)?")
                     .font(.largeTitle)
                     .multilineTextAlignment(.center)
                     .padding()
@@ -97,5 +96,5 @@ struct Questionnaire: View {
 
 
 #Preview {
-    Questionnaire()
+    Questionnaire_2()
 }

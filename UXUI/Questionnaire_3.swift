@@ -1,15 +1,14 @@
 //
-//  ContentView.swift
-//  fighting park's dizzy wit Andrew and Molly
+//  Questionnaire_3.swift
+//  UXUI
 //
-//  Created by Molly Bradach on 1/29/24.
+//  Created by Molly Bradach on 2/4/24.
 //
 
+import Foundation
 import SwiftUI
-//import ResearchKit
 
-
-struct Questionnaire: View {
+struct Questionnaire_3: View {
     var body: some View {
         ZStack{
             LinearGradient(gradient: Gradient(colors: [Color.white,Color.white, Color.mint]),
@@ -19,7 +18,7 @@ struct Questionnaire: View {
             
             VStack {
                 
-                Text("Do you have a diagnosis of REM behavior disorder, also known as RBD?")
+                Text("Do you have any problems with your sense of smell?")
                     .font(.largeTitle)
                     .multilineTextAlignment(.center)
                     .padding()
@@ -82,7 +81,7 @@ struct Questionnaire: View {
                 Button(action: {
                     /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                 }) {
-                    Text("Continue")
+                    Text("Submit")
                         .frame(width: 200 , height: 50, alignment: .center)
                 }
                 .foregroundColor(.black)
@@ -97,5 +96,5 @@ struct Questionnaire: View {
 
 
 #Preview {
-    Questionnaire()
+    Questionnaire_3()
 }
