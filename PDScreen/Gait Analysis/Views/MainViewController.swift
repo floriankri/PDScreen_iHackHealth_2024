@@ -7,6 +7,7 @@ The app's main view controller.
 
 import UIKit
 import Vision
+import SwiftUI // Sophie
 
 @available(iOS 14.0, *)
 class MainViewController: UIViewController {

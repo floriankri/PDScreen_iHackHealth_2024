@@ -15,5 +15,6 @@ struct MainViewControllerWrapper: UIViewControllerRepresentable {
         return viewController
     }
 
-    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<MainViewControllerWrapper>) {}
+    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<MainViewControllerWrapper>) {
+    }
 }

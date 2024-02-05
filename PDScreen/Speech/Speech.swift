@@ -73,8 +73,6 @@ struct Speech: View {
                                     
                                 }
                                 .navigationBarTitle("", displayMode: .inline)
-                                .navigationBarHidden(true)
-                                .navigationBarBackButtonHidden(true)
                                 Spacer()
                                     
                             }

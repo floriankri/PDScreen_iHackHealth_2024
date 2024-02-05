@@ -17,7 +17,7 @@ struct Questionnaire: View {
     @State private var didTap4:Bool = false
     
     var body: some View {
-        NavigationStack{
+        
             ZStack{
                 LinearGradient(gradient: Gradient(colors: [Color.white,Color.white, Color.mint]),
                                startPoint: .topLeading,
@@ -101,7 +101,7 @@ struct Questionnaire: View {
                     
                     Text("   ")
                     
-                    Button(action: {toPage2 = true})
+                    NavigationLink(destination: Questionnaire_2())
                     {
                         Text("Continue")
                             .frame(width: 200 , height: 50, alignment: .center)
@@ -111,6 +111,9 @@ struct Questionnaire: View {
                     .font(.title)
                     .cornerRadius(30)
                     .padding()
+                    .navigationBarTitle("", displayMode: .inline)
+                    .navigationBarHidden(true)
+                    .navigationBarBackButtonHidden(true)
                 }
             }
             .navigationDestination(isPresented: $toPage2) {
@@ -118,7 +121,6 @@ struct Questionnaire: View {
             }
             }
         }
-    }
     
 #Preview {
     Questionnaire()
