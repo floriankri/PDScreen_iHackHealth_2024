@@ -43,6 +43,9 @@
 		7CB9FAAC2B7076D100A1725B /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FAA82B7076D100A1725B /* SummaryViewController.swift */; };
 		7CB9FAAD2B7076D100A1725B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FAA92B7076D100A1725B /* MainViewController.swift */; };
 		7CB9FAAE2B7076D100A1725B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB9FAAA2B7076D100A1725B /* Main.storyboard */; };
+		7CB9FAB42B7080E800A1725B /* MainViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FAB32B7080E800A1725B /* MainViewControllerWrapper.swift */; };
+		7CB9FABF2B70845400A1725B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB9FAB92B70845400A1725B /* LaunchScreen.storyboard */; };
+		7CB9FAC02B70845400A1725B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FABC2B70845400A1725B /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +86,9 @@
 		7CB9FAA82B7076D100A1725B /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		7CB9FAA92B7076D100A1725B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7CB9FAAB2B7076D100A1725B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CB9FAB32B7080E800A1725B /* MainViewControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerWrapper.swift; sourceTree = "<group>"; };
+		7CB9FABA2B70845400A1725B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CB9FABC2B70845400A1725B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,7 @@
 		7CB9FA142B706B0100A1725B /* Gait Analysis */ = {
 			isa = PBXGroup;
 			children = (
+				7CB9FAB72B70845400A1725B /* App */,
 				7CB9FAA72B7076D100A1725B /* Views */,
 				7CB9FAA42B70767000A1725B /* Video Processing Chain */,
 				7CB9FA9B2B70762300A1725B /* Video Capture */,
@@ -161,6 +168,7 @@
 				7CB9FA872B7075AA00A1725B /* Pose */,
 				7CB9FA152B706B0100A1725B /* GaitBeginRecording.swift */,
 				7CB9FA162B706B0100A1725B /* Gait.swift */,
+				7CB9FAB32B7080E800A1725B /* MainViewControllerWrapper.swift */,
 			);
 			path = "Gait Analysis";
 			sourceTree = "<group>";
@@ -235,6 +243,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		7CB9FAB72B70845400A1725B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7CB9FAB92B70845400A1725B /* LaunchScreen.storyboard */,
+				7CB9FABC2B70845400A1725B /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,6 +312,7 @@
 			files = (
 				7CB9FAAE2B7076D100A1725B /* Main.storyboard in Resources */,
 				7CB9FA5A2B706B0200A1725B /* Preview Assets.xcassets in Resources */,
+				7CB9FABF2B70845400A1725B /* LaunchScreen.storyboard in Resources */,
 				7CB9FA5B2B706B0200A1725B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +336,7 @@
 				7CB9FA3B2B706B0200A1725B /* FingerBeginRecording.swift in Sources */,
 				7CB9FA962B70760200A1725B /* ExerciseClassifier+FrameRate.swift in Sources */,
 				7CB9FAA12B70762300A1725B /* AVCaptureDeviceInput+Camera.swift in Sources */,
+				7CB9FAC02B70845400A1725B /* AppDelegate.swift in Sources */,
 				7CB9FAAD2B7076D100A1725B /* MainViewController.swift in Sources */,
 				7CB9FA982B70760200A1725B /* ExerciseClassifier.swift in Sources */,
 				7CB9FA8C2B7075AA00A1725B /* Pose+Landmark.swift in Sources */,
@@ -335,6 +354,7 @@
 				7CB9FA432B706B0200A1725B /* Gait.swift in Sources */,
 				7CB9FA422B706B0200A1725B /* GaitBeginRecording.swift in Sources */,
 				7CB9FA9A2B70760200A1725B /* ExerciseClassifier+Singleton.swift in Sources */,
+				7CB9FAB42B7080E800A1725B /* MainViewControllerWrapper.swift in Sources */,
 				7CB9FAA32B70762300A1725B /* AVCaptureVideoDataOutput+PixelFormat.swift in Sources */,
 				7CB9FA8D2B7075AA00A1725B /* Pose.swift in Sources */,
 				7CB9FA412B706B0200A1725B /* SpeechReturn.swift in Sources */,
@@ -351,6 +371,14 @@
 				7CB9FAAB2B7076D100A1725B /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CB9FAB92B70845400A1725B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CB9FABA2B70845400A1725B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -486,9 +514,11 @@
 				DEVELOPMENT_TEAM = LAUY34RP9T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture input for an Action Classifier model ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -516,9 +546,11 @@
 				DEVELOPMENT_TEAM = LAUY34RP9T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture input for an Action Classifier model ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
