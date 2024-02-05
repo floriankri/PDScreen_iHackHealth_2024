@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AboutPage: View {
+    @State private var toQuestionnaire = false
     var body: some View {
         
         ZStack{
