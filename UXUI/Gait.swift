@@ -57,22 +57,22 @@ struct Gait: View {
                             )
                             .frame(width: 700, height:300) // Adjust the frame size as needed
                         Spacer()
-                        Button(action: {
+                        
+                        NavigationLink(destination: GaitBeginRecording())  {
                             // Your button action here
-                        }) {
                             Text("Continue")
-                                .font(.largeTitle)
+                                .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
                                 .padding(40)
-                                .frame(width: 300, height: 113)
+                                .frame(width: 250, height: 90)
                                 .background(Color.donaldDuck)
-                                .cornerRadius(15)
-                    
-                                
-                                
+                                .cornerRadius(12)
+                            
                         }
-                        .padding(.bottom, 70.0)
+                        .navigationBarTitle("", displayMode: .inline)
+                        .navigationBarHidden(true)
+                        .navigationBarBackButtonHidden(true)
                         Spacer()
                             
                     }

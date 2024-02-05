@@ -25,7 +25,7 @@ struct BeginPage: View {
                     .padding()
                     Spacer() // Push to the center
                     
-                    NavigationLink(destination: Questionnaire())  {
+                    NavigationLink(destination: Gait())  {
                         // Your button action here
                         //begin screening box!
                         HStack {
