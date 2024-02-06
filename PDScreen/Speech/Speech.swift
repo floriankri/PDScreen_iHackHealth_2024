@@ -60,7 +60,7 @@ struct Speech: View {
                                     )
                                     .frame(width: 700, height:400) // Adjust the frame size as needed
                                 Spacer()
-                                NavigationLink(destination: Speech_Prompt())  {
+                                NavigationLink(destination: SpeechReturn())  {
                                     // Your button action here
                                     Text("Continue")
                                         .font(.title)
