@@ -38,7 +38,7 @@ struct AboutPage: View {
                     .navigationBarHidden(true)
                     .navigationBarBackButtonHidden(true)
                 }
-                RoundedRectangle(cornerRadius: 10)
+                RoundedRectangle(cornerRadius: 15)
                     .foregroundColor(.secondary) // You can change the color as desired
                     .padding(.top, -50.0)
                     .padding(.leading)
