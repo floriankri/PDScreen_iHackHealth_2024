@@ -56,7 +56,7 @@ struct GaitBeginRecording: View {
                 Spacer()
                     .padding()
                 
-                NavigationLink(destination: MainViewControllerWrapper())  { // Wrapper
+                NavigationLink(destination: GaitReturn())  { // Wrapper
                     // Your button action here
                     HStack{
                         Image(systemName: "video.fill")
@@ -86,7 +86,6 @@ struct GaitBeginRecording: View {
                 
                     
             }
-            .padding(.bottom, 55.0)
         }
     }
 }

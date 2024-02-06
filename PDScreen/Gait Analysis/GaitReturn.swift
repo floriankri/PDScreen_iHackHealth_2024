@@ -1,5 +1,5 @@
 //
-//  Return Page.swift
+//  FingerTapReturn.swift
 //  UXUI
 //
 //  Created by Molly Bradach on 2/2/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Return_Page: View {
+struct GaitReturn: View {
     var body: some View {
         ZStack{
             LinearGradient(gradient: Gradient(colors: [Color.white,Color.white, Color.mint]),
@@ -22,8 +22,8 @@ struct Return_Page: View {
                 HStack{
                     
                     Text("""
-Congratulations on completing the Questionnaire!
-Please proceed to the Speech Test.
+Congratulations on completing the Gait test!
+You are all done, please go back to the main page.
 """)
                     .font(.title)
                         .fontWeight(.bold)
@@ -32,10 +32,9 @@ Please proceed to the Speech Test.
                 }
                 Spacer() // Push to the center
                 
-                //begin screening button!!
-                NavigationLink(destination: Speech())  {
+                NavigationLink(destination: BeginPage())  {
                     // Your button action here
-                    Text("Continue")
+                    Text("Back")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -46,8 +45,6 @@ Please proceed to the Speech Test.
                     
                 }
                 .navigationBarTitle("", displayMode: .inline)
-                .navigationBarHidden(true)
-                .navigationBarBackButtonHidden(true)
                 Spacer()
             }
         }
@@ -55,5 +52,5 @@ Please proceed to the Speech Test.
 }
 
 #Preview {
-    Return_Page()
+    GaitReturn()
 }
