@@ -209,6 +209,36 @@ struct Speech_Prompt: View {
                 Spacer()
                 
                 ZStack{
+                    
+                    VStack{
+                        Spacer()
+                        
+                        Button(action: {
+                            if viewModel.isRecording {
+                                viewModel.stopRecording()
+                            } else {
+                                viewModel.startRecording()
+                            }
+                        }) {
+                            HStack{
+                                Image(systemName: "mic.fill")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 70.0, height: 70.0)
+                                
+                                Text(viewModel.isRecording ? "Stop Recording" : "Begin Recording")
+                                    .font(.largeTitle)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.white)
+                            }
+                            .padding(.vertical, 40)
+                            .frame(width: 400, height: 113)
+                            .background(Color.donaldDuck)
+                            .cornerRadius(15)
+                        }
+                    }
+                    
                     VStack{
 
                         
@@ -220,88 +250,34 @@ struct Speech_Prompt: View {
                                 .foregroundColor(.black)
                                 .cornerRadius(15)
                             
+                            Spacer()
+                            
                             // Button to move to the next page if transcription is successful
                             if result == 0 {
-                                Button(action: {
-                                    // Add code to navigate to the next page
-                                    // For example: NavigationLink(destination: NextPageView()) { }
-                                }) {
-                                    Text("Next Page")
-                                        .font(.system(size: 20))
+                                NavigationLink(destination: SpeechReturn())  {
+                                    // Your button action here
+                                    Text("Continue")
+                                        .font(.title)
+                                        .fontWeight(.bold)
                                         .foregroundColor(.white)
-                                        .padding()
-                                        .background(Color.green)
+                                        .padding(40)
+                                        .frame(width: 400, height: 113)
+                                        .background(Color.donaldDuck)
                                         .cornerRadius(15)
+                                    
                                 }
-                                .padding(.top, 20)
                             }
                         }
                     }
                     
-                }
-                Spacer()
-
-                Button(action: {
-                    if viewModel.isRecording {
-                        viewModel.stopRecording()
-                    } else {
-                        viewModel.startRecording()
-                    }
-                }) {
-                    HStack{
-                        Image(systemName: "mic.fill")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundColor(Color.white)
-                            .frame(width: 70.0, height: 70.0)
-                       
-                        Text(viewModel.isRecording ? "Stop Recording" : "Begin Recording")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                    }
-                    .padding(.vertical, 40)
-                    .frame(width: 400, height: 113)
-                    .background(Color.donaldDuck)
-                    .cornerRadius(15)
-                }
-//                Button(action: {
-//                }) {
-//                    HStack{
-//                        Image(systemName: "mic.fill")
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-//                            .foregroundColor(Color.white)
-//                            .frame(width: 70.0, height: 70.0)
-//
-//                        if viewModel.isComplete == true {
-//                            Text("Submit")
-//                        } else if viewModel.isComplete == false && viewModel.isRecording {
-//                            Text("Stop Recording")
-//                        } else {
-//                            Text("Begin Recording")
-//                        }
-//                    }
-//                    .font(.largeTitle)
-//                    .fontWeight(.bold)
-//                    .foregroundColor(.white)
-//                }
-//                .padding(.vertical, 40)
-//                        .frame(width: 400, height: 113)
-//                        .background(Color.donaldDuck)
-//                        .cornerRadius(15)
-
-                Spacer()
                     
+                }
             }
-            Spacer()
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        Speech_Prompt()
-    }
+#Preview {
+    Speech_Prompt()
 }
 
