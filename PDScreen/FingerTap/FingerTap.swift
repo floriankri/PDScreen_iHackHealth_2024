@@ -18,9 +18,7 @@ struct FingerTap: View {
             
             VStack{
                 Spacer()
-                    .padding(.top, -8.0)
-                    
-                
+                    .frame(height: 100)
                 HStack{
                     Spacer()
                     Image("fingerL")
@@ -37,17 +35,15 @@ struct FingerTap: View {
                                             .frame(width: 159.0, height: 265.0)
                     Spacer()
                 }
-                .padding()
                 .frame(width: 700.0, height: 265.0)
-                Spacer()
                 HStack{
                     Text("Finger Tapping")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                 }
-                .padding()
                 Spacer()
+                    .frame(height: 50)
 
                 RoundedRectangle(cornerRadius: 15)
                     .foregroundColor(.secondary) // You can change the color as desired
@@ -59,7 +55,6 @@ struct FingerTap: View {
                            You will be recorded while you carry out this task.
                            
                            Please sit in front of the camera with your hands free and in view.
-                           
                            """)
                         .font(.system(size: 30))
                         .fontWeight(.medium)
@@ -82,7 +77,6 @@ struct FingerTap: View {
                         .cornerRadius(15)
                 }
                 .navigationBarTitle("", displayMode: .inline)
-                Spacer()
                     
             }
         }

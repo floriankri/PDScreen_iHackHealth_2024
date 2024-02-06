@@ -17,26 +17,22 @@ struct Gait: View {
             
             VStack{
                 Spacer()
-                    .padding(.top, -8.0)
-                    
-                
+                    .frame(height: 100)
                 HStack{
                     Spacer()
                     Image("gait")
                         .resizable()
                     Spacer()
                 }
-                .padding()
                 .frame(width: 273.0, height: 275.0)
-                Spacer()
                 HStack{
                     Text("Gait Analysis")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                 }
-                .padding()
                 Spacer()
+                    .frame(height: 50)
 
                 RoundedRectangle(cornerRadius: 15)
                     .foregroundColor(.secondary) // You can change the color as desired
@@ -55,7 +51,7 @@ struct Gait: View {
                             .multilineTextAlignment(.leading)
                             .padding()
                     )
-                    .frame(width: 700, height:300) // Adjust the frame size as needed
+                    .frame(width: 700, height:400) // Adjust the frame size as needed
                 Spacer()
                 
                 NavigationLink(destination: GaitBeginRecording())  {
@@ -73,7 +69,6 @@ struct Gait: View {
                 .navigationBarTitle("", displayMode: .inline)
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
-                Spacer()
                     
             }
         }

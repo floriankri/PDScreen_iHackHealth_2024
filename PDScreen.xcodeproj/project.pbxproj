@@ -89,9 +89,9 @@
 				339B7B9F2B6DCB27003A55D1 /* AboutPage.swift */,
 				7C1FABF12B71C2E000E3E48B /* Custom_UI.swift */,
 				7CB9FA5E2B706B8800A1725B /* Questionnaire */,
+				7CB9FA0F2B706B0100A1725B /* Speech */,
 				7CB9FA0B2B706B0100A1725B /* FingerTap */,
 				7CB9FA142B706B0100A1725B /* Gait Analysis */,
-				7CB9FA0F2B706B0100A1725B /* Speech */,
 				7CB9FA382B706B0200A1725B /* Preview Content */,
 				7CB9FA3A2B706B0200A1725B /* Assets.xcassets */,
 			);
@@ -101,8 +101,8 @@
 		7CB9FA0B2B706B0100A1725B /* FingerTap */ = {
 			isa = PBXGroup;
 			children = (
-				7CB9FA0C2B706B0100A1725B /* FingerBeginRecording.swift */,
 				7CB9FA0D2B706B0100A1725B /* FingerTap.swift */,
+				7CB9FA0C2B706B0100A1725B /* FingerBeginRecording.swift */,
 				7CB9FA0E2B706B0100A1725B /* FingerTapReturn.swift */,
 			);
 			path = FingerTap;
@@ -111,8 +111,8 @@
 		7CB9FA0F2B706B0100A1725B /* Speech */ = {
 			isa = PBXGroup;
 			children = (
-				7CB9FA102B706B0100A1725B /* Speech Prompt.swift */,
 				7CB9FA112B706B0100A1725B /* Speech.swift */,
+				7CB9FA102B706B0100A1725B /* Speech Prompt.swift */,
 				7CB9FA132B706B0100A1725B /* SpeechReturn.swift */,
 			);
 			path = Speech;

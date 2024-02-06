@@ -4,6 +4,7 @@
 //
 //  Created by Molly Bradach on 2/2/24.
 //
+                                   
 
 import SwiftUI
 
@@ -18,7 +19,7 @@ struct FingerBeginRecording: View {
                     
                     VStack{
                         Spacer()
-                            .padding(.top, 3.0)
+                            .frame(height: 100)
                         HStack{
                             Spacer()
                             Image("fingerL")
@@ -37,34 +38,31 @@ struct FingerBeginRecording: View {
                         }
                         .padding()
                         .frame(width: 700.0, height: 265.0)
-                        Spacer()
                         HStack{
                             Text("Finger Tapping")
                                 .font(.largeTitle)
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.center)
                         }
-                        .padding(.top, 13.0)
-                        
+                        Spacer()
+                            .frame(height: 50)
 
-                        RoundedRectangle(cornerRadius: 10)
+                        RoundedRectangle(cornerRadius: 15)
                             .foregroundColor(.secondary) // You can change the color as desired
-                            .padding(10.0)
+                            .padding()
                             .overlay(
                                 Text("""
-                                   Make an “L” with your index finger and thumb. Tap those fingers together 10 times.
-                                   
-                                   """)
+Make an “L” with your index finger and thumb. Tap those fingers together 10 times.
+""")
                                 .font(.system(size: 30))
                                 .fontWeight(.medium)
-                                .padding(3.0)
+                                .padding()
                                 .foregroundColor(.white) // You can change the text color as desired
                                     .multilineTextAlignment(.leading)
                                     .padding()
                             )
-                            .frame(width: 700, height:200) // Adjust the frame size as needed
+                            .frame(width: 700, height:400) // Adjust the frame size as needed
                         Spacer()
-                            .padding()
                         
                         NavigationLink(destination: FingerTapReturn())  { // Wrapper
                             // Your button action here
@@ -92,7 +90,6 @@ struct FingerBeginRecording: View {
                         .navigationBarTitle("", displayMode: .inline)
                         .navigationBarHidden(true)
                         .navigationBarBackButtonHidden(true)
-                        Spacer()
                     }
                 }
             }
