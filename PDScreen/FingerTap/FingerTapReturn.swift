@@ -32,32 +32,20 @@ Please proceed to the Gait Test.
                 }
                 Spacer() // Push to the center
                 
-                //begin screening button!!
-                Button(action: {
-                    // Handle button action here
-                    print("Button pressed!")
-                }) {
+                NavigationLink(destination: Gait())  {
+                    // Your button action here
+                    Text("Continue")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding(40)
+                        .frame(width: 250, height: 90)
+                        .background(Color.donaldDuck)
+                        .cornerRadius(12)
                     
-                    //begin screening box!
-                    HStack {
-                    
-                        
-                        Text("Continue")
-                            .foregroundColor(.white)
-                            .font(.title)
-                            .fontWeight(.heavy)
-                    }
-                    .padding()
-                    .background(
-                        Rectangle()
-                            .frame(width: 200.0, height: 100.0)
-                            .foregroundColor(Color.donaldDuck) // Set your desired color
-                            .cornerRadius(15) // Set corner radius if needed
-                    )
-                    .padding() // Add padding as needed
                 }
-                
-                Spacer() // Push to the center
+                .navigationBarTitle("", displayMode: .inline)
+                Spacer()
             }
         }
     }

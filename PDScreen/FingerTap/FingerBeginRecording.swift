@@ -65,14 +65,14 @@ struct FingerBeginRecording: View {
                             .frame(width: 700, height:200) // Adjust the frame size as needed
                         Spacer()
                             .padding()
-                        Button(action: {
+                        
+                        NavigationLink(destination: FingerTapReturn())  { // Wrapper
                             // Your button action here
-                        }) {
                             HStack{
                                 Image(systemName: "video.fill")
                                     .resizable()
                                 
-        
+
                                     .aspectRatio(contentMode: .fit)
                                     .foregroundColor(Color.white)
                         
@@ -83,20 +83,17 @@ struct FingerBeginRecording: View {
                                     .foregroundColor(.white)
                                 
                             }
-                          
                             .padding(.vertical, 40)
                                     .frame(width: 400, height: 113)
                                     .background(Color.donaldDuck)
                                     .cornerRadius(15)
-                                
-                                
                             
                         }
+                        .navigationBarTitle("", displayMode: .inline)
+                        .navigationBarHidden(true)
+                        .navigationBarBackButtonHidden(true)
                         Spacer()
-                        
-                            
                     }
-                    .padding(.bottom, 55.0)
                 }
             }
         }

@@ -97,7 +97,7 @@ struct Questionnaire_3: View {
                 
                 Text("   ")
                 
-                NavigationLink(destination: Return_Page())
+                NavigationLink(destination: QuestionnaireReturn())
                 {
                     Text("Submit")
                         .frame(width: 200 , height: 50, alignment: .center)
@@ -113,7 +113,7 @@ struct Questionnaire_3: View {
             }
         }
         .navigationDestination(isPresented: $QsToHome) {
-            Return_Page()
+            QuestionnaireReturn()
         }
         }
     }

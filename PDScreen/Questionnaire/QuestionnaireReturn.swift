@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Return_Page: View {
+struct QuestionnaireReturn: View {
     var body: some View {
         ZStack{
             LinearGradient(gradient: Gradient(colors: [Color.white,Color.white, Color.mint]),
@@ -55,5 +55,5 @@ Please proceed to the Speech Test.
 }
 
 #Preview {
-    Return_Page()
+    QuestionnaireReturn()
 }
