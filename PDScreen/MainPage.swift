@@ -31,7 +31,7 @@ struct MainPage: View {
                         
                         NavigationLink(destination: BeginPage())  {
                             // Your button action here
-                            Text("Let's begin!")
+                            Text("Let's begin")
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
