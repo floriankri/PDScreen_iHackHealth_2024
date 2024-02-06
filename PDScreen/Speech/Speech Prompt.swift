@@ -1,3 +1,4 @@
+
 //
 //  Speech Prompt.swift
 //  UXUI
@@ -89,6 +90,7 @@ class AudioRecorder: ObservableObject {
 
 class RecorderViewModel: ObservableObject {
     @Published var isRecording = false
+    @Published var isComplete = false
     @Published var transcribedText = ""
     @Published var transcriptionResult: Int? // Added property
 
@@ -141,6 +143,7 @@ class RecorderViewModel: ObservableObject {
                 DispatchQueue.main.async { // Update on the main queue
                     self?.transcribedText = result.bestTranscription.formattedString
                     self?.transcriptionResult = 0 // Set the result to 0 (success)
+                    self?.isComplete = true
                 }
             }
         }
@@ -193,8 +196,8 @@ struct Speech_Prompt: View {
                                 //.multilineTextAlignment(.leading)
                                 .padding()
                             
-                            Text("Transcribed Text:")
-                                .foregroundColor(.white)
+//                            Text("Transcribed Text:")
+//                                .foregroundColor(.white)
 
                         }
                     )
@@ -206,24 +209,38 @@ struct Speech_Prompt: View {
                 Spacer()
                 
                 ZStack{
-                    Text("Transcription Result:")
-                        .frame(width: 300 , height: 50, alignment: .center)
-                        .font(.system(size: 20))
-                        .background(.white)
-                        .foregroundColor(.black)
-                        .cornerRadius(15)
-                    
-                    if let result = viewModel.transcriptionResult {
-                        Text("Transcription Result: \(result == 0 ? "Success" : "Failure")")
-                            .frame(width: 300 , height: 50, alignment: .center)
-                            .font(.system(size: 20))
-                            .background(.white)
-                            .foregroundColor(.black)
-                            .cornerRadius(15)
+                    VStack{
+
+                        
+                        if let result = viewModel.transcriptionResult {
+                            Text("Transcription Result: \(result == 0 ? "Success" : "Failure")")
+                                .frame(width: 300 , height: 50, alignment: .center)
+                                .font(.system(size: 20))
+                                .background(.white)
+                                .foregroundColor(.black)
+                                .cornerRadius(15)
+                            
+                            // Button to move to the next page if transcription is successful
+                            if result == 0 {
+                                Button(action: {
+                                    // Add code to navigate to the next page
+                                    // For example: NavigationLink(destination: NextPageView()) { }
+                                }) {
+                                    Text("Next Page")
+                                        .font(.system(size: 20))
+                                        .foregroundColor(.white)
+                                        .padding()
+                                        .background(Color.green)
+                                        .cornerRadius(15)
+                                }
+                                .padding(.top, 20)
+                            }
+                        }
                     }
+                    
                 }
                 Spacer()
-                
+
                 Button(action: {
                     if viewModel.isRecording {
                         viewModel.stopRecording()
@@ -237,20 +254,47 @@ struct Speech_Prompt: View {
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(Color.white)
                             .frame(width: 70.0, height: 70.0)
-                        
+                       
                         Text(viewModel.isRecording ? "Stop Recording" : "Begin Recording")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                     }
+                    .padding(.vertical, 40)
+                    .frame(width: 400, height: 113)
+                    .background(Color.donaldDuck)
+                    .cornerRadius(15)
                 }
-                .padding(.vertical, 40)
-                        .frame(width: 400, height: 113)
-                        .background(Color.donaldDuck)
-                        .cornerRadius(15)
+//                Button(action: {
+//                }) {
+//                    HStack{
+//                        Image(systemName: "mic.fill")
+//                            .resizable()
+//                            .aspectRatio(contentMode: .fit)
+//                            .foregroundColor(Color.white)
+//                            .frame(width: 70.0, height: 70.0)
+//
+//                        if viewModel.isComplete == true {
+//                            Text("Submit")
+//                        } else if viewModel.isComplete == false && viewModel.isRecording {
+//                            Text("Stop Recording")
+//                        } else {
+//                            Text("Begin Recording")
+//                        }
+//                    }
+//                    .font(.largeTitle)
+//                    .fontWeight(.bold)
+//                    .foregroundColor(.white)
+//                }
+//                .padding(.vertical, 40)
+//                        .frame(width: 400, height: 113)
+//                        .background(Color.donaldDuck)
+//                        .cornerRadius(15)
+
                 Spacer()
                     
             }
+            Spacer()
         }
     }
 }

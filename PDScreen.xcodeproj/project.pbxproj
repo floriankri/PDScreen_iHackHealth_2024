@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BF1ABB52B71C0350072892E /* QuestionnaireReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1ABB42B71C0350072892E /* QuestionnaireReturn.swift */; };
+		2BF1ABB72B71C0620072892E /* GaitReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1ABB62B71C0620072892E /* GaitReturn.swift */; };
 		339B7B8E2B6DC9E6003A55D1 /* UXUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B7B8D2B6DC9E6003A55D1 /* UXUIApp.swift */; };
 		339B7B9C2B6DCA0A003A55D1 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B7B9B2B6DCA0A003A55D1 /* MainPage.swift */; };
 		339B7B9E2B6DCAD7003A55D1 /* BeginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B7B9D2B6DCAD7003A55D1 /* BeginPage.swift */; };
 		339B7BA02B6DCB27003A55D1 /* AboutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B7B9F2B6DCB27003A55D1 /* AboutPage.swift */; };
-		339B7BB22B6E0128003A55D1 /* Return Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B7BB12B6E0128003A55D1 /* Return Page.swift */; };
 		339B7BB82B6E07D2003A55D1 /* Questionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339B7BB72B6E07D2003A55D1 /* Questionnaire.swift */; };
 		7CB9FA092B706AD300A1725B /* Questionnaire_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA072B706AD300A1725B /* Questionnaire_3.swift */; };
 		7CB9FA0A2B706AD300A1725B /* Questionnaire_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA082B706AD300A1725B /* Questionnaire_2.swift */; };
@@ -20,41 +21,21 @@
 		7CB9FA3D2B706B0200A1725B /* FingerTapReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA0E2B706B0100A1725B /* FingerTapReturn.swift */; };
 		7CB9FA3E2B706B0200A1725B /* Speech Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA102B706B0100A1725B /* Speech Prompt.swift */; };
 		7CB9FA3F2B706B0200A1725B /* Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA112B706B0100A1725B /* Speech.swift */; };
-		7CB9FA402B706B0200A1725B /* SpeechRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA122B706B0100A1725B /* SpeechRecording.swift */; };
 		7CB9FA412B706B0200A1725B /* SpeechReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA132B706B0100A1725B /* SpeechReturn.swift */; };
 		7CB9FA422B706B0200A1725B /* GaitBeginRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA152B706B0100A1725B /* GaitBeginRecording.swift */; };
 		7CB9FA432B706B0200A1725B /* Gait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA162B706B0100A1725B /* Gait.swift */; };
 		7CB9FA5A2B706B0200A1725B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB9FA392B706B0200A1725B /* Preview Assets.xcassets */; };
 		7CB9FA5B2B706B0200A1725B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB9FA3A2B706B0200A1725B /* Assets.xcassets */; };
-		7CB9FA8C2B7075AA00A1725B /* Pose+Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA882B7075AA00A1725B /* Pose+Landmark.swift */; };
-		7CB9FA8D2B7075AA00A1725B /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA892B7075AA00A1725B /* Pose.swift */; };
-		7CB9FA8E2B7075AA00A1725B /* Pose+Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA8A2B7075AA00A1725B /* Pose+Connection.swift */; };
-		7CB9FA8F2B7075AA00A1725B /* Pose+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA8B2B7075AA00A1725B /* Pose+Empty.swift */; };
-		7CB9FA962B70760200A1725B /* ExerciseClassifier+FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA912B70760200A1725B /* ExerciseClassifier+FrameRate.swift */; };
-		7CB9FA972B70760200A1725B /* ActionPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA922B70760200A1725B /* ActionPrediction.swift */; };
-		7CB9FA982B70760200A1725B /* ExerciseClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA932B70760200A1725B /* ExerciseClassifier.swift */; };
-		7CB9FA992B70760200A1725B /* ExerciseClassifier+PredictAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA942B70760200A1725B /* ExerciseClassifier+PredictAction.swift */; };
-		7CB9FA9A2B70760200A1725B /* ExerciseClassifier+Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA952B70760200A1725B /* ExerciseClassifier+Singleton.swift */; };
-		7CB9FAA02B70762300A1725B /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA9C2B70762300A1725B /* VideoCapture.swift */; };
-		7CB9FAA12B70762300A1725B /* AVCaptureDeviceInput+Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA9D2B70762300A1725B /* AVCaptureDeviceInput+Camera.swift */; };
-		7CB9FAA22B70762300A1725B /* AVCaptureDevice+FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA9E2B70762300A1725B /* AVCaptureDevice+FrameRate.swift */; };
-		7CB9FAA32B70762300A1725B /* AVCaptureVideoDataOutput+PixelFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FA9F2B70762300A1725B /* AVCaptureVideoDataOutput+PixelFormat.swift */; };
-		7CB9FAA62B70767000A1725B /* VideoProcessingChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FAA52B70767000A1725B /* VideoProcessingChain.swift */; };
-		7CB9FAAC2B7076D100A1725B /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FAA82B7076D100A1725B /* SummaryViewController.swift */; };
-		7CB9FAAD2B7076D100A1725B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FAA92B7076D100A1725B /* MainViewController.swift */; };
-		7CB9FAAE2B7076D100A1725B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB9FAAA2B7076D100A1725B /* Main.storyboard */; };
-		7CB9FAB42B7080E800A1725B /* MainViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FAB32B7080E800A1725B /* MainViewControllerWrapper.swift */; };
-		7CB9FABF2B70845400A1725B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB9FAB92B70845400A1725B /* LaunchScreen.storyboard */; };
-		7CB9FAC02B70845400A1725B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9FABC2B70845400A1725B /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BF1ABB42B71C0350072892E /* QuestionnaireReturn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionnaireReturn.swift; sourceTree = "<group>"; };
+		2BF1ABB62B71C0620072892E /* GaitReturn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaitReturn.swift; sourceTree = "<group>"; };
 		339B7B8A2B6DC9E6003A55D1 /* PDScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		339B7B8D2B6DC9E6003A55D1 /* UXUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXUIApp.swift; sourceTree = "<group>"; };
 		339B7B9B2B6DCA0A003A55D1 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		339B7B9D2B6DCAD7003A55D1 /* BeginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginPage.swift; sourceTree = "<group>"; };
 		339B7B9F2B6DCB27003A55D1 /* AboutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPage.swift; sourceTree = "<group>"; };
-		339B7BB12B6E0128003A55D1 /* Return Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Return Page.swift"; sourceTree = "<group>"; };
 		339B7BB72B6E07D2003A55D1 /* Questionnaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questionnaire.swift; sourceTree = "<group>"; };
 		7CB9FA072B706AD300A1725B /* Questionnaire_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questionnaire_3.swift; sourceTree = "<group>"; };
 		7CB9FA082B706AD300A1725B /* Questionnaire_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questionnaire_2.swift; sourceTree = "<group>"; };
@@ -63,32 +44,11 @@
 		7CB9FA0E2B706B0100A1725B /* FingerTapReturn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingerTapReturn.swift; sourceTree = "<group>"; };
 		7CB9FA102B706B0100A1725B /* Speech Prompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Speech Prompt.swift"; sourceTree = "<group>"; };
 		7CB9FA112B706B0100A1725B /* Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speech.swift; sourceTree = "<group>"; };
-		7CB9FA122B706B0100A1725B /* SpeechRecording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecording.swift; sourceTree = "<group>"; };
 		7CB9FA132B706B0100A1725B /* SpeechReturn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechReturn.swift; sourceTree = "<group>"; };
 		7CB9FA152B706B0100A1725B /* GaitBeginRecording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaitBeginRecording.swift; sourceTree = "<group>"; };
 		7CB9FA162B706B0100A1725B /* Gait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gait.swift; sourceTree = "<group>"; };
 		7CB9FA392B706B0200A1725B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7CB9FA3A2B706B0200A1725B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7CB9FA882B7075AA00A1725B /* Pose+Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pose+Landmark.swift"; sourceTree = "<group>"; };
-		7CB9FA892B7075AA00A1725B /* Pose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
-		7CB9FA8A2B7075AA00A1725B /* Pose+Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pose+Connection.swift"; sourceTree = "<group>"; };
-		7CB9FA8B2B7075AA00A1725B /* Pose+Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pose+Empty.swift"; sourceTree = "<group>"; };
-		7CB9FA912B70760200A1725B /* ExerciseClassifier+FrameRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+FrameRate.swift"; sourceTree = "<group>"; };
-		7CB9FA922B70760200A1725B /* ActionPrediction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionPrediction.swift; sourceTree = "<group>"; };
-		7CB9FA932B70760200A1725B /* ExerciseClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseClassifier.swift; sourceTree = "<group>"; };
-		7CB9FA942B70760200A1725B /* ExerciseClassifier+PredictAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+PredictAction.swift"; sourceTree = "<group>"; };
-		7CB9FA952B70760200A1725B /* ExerciseClassifier+Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseClassifier+Singleton.swift"; sourceTree = "<group>"; };
-		7CB9FA9C2B70762300A1725B /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
-		7CB9FA9D2B70762300A1725B /* AVCaptureDeviceInput+Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDeviceInput+Camera.swift"; sourceTree = "<group>"; };
-		7CB9FA9E2B70762300A1725B /* AVCaptureDevice+FrameRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+FrameRate.swift"; sourceTree = "<group>"; };
-		7CB9FA9F2B70762300A1725B /* AVCaptureVideoDataOutput+PixelFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoDataOutput+PixelFormat.swift"; sourceTree = "<group>"; };
-		7CB9FAA52B70767000A1725B /* VideoProcessingChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoProcessingChain.swift; sourceTree = "<group>"; };
-		7CB9FAA82B7076D100A1725B /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
-		7CB9FAA92B7076D100A1725B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		7CB9FAAB2B7076D100A1725B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7CB9FAB32B7080E800A1725B /* MainViewControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerWrapper.swift; sourceTree = "<group>"; };
-		7CB9FABA2B70845400A1725B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7CB9FABC2B70845400A1725B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,9 +108,8 @@
 		7CB9FA0F2B706B0100A1725B /* Speech */ = {
 			isa = PBXGroup;
 			children = (
-				7CB9FA102B706B0100A1725B /* Speech Prompt.swift */,
 				7CB9FA112B706B0100A1725B /* Speech.swift */,
-				7CB9FA122B706B0100A1725B /* SpeechRecording.swift */,
+				7CB9FA102B706B0100A1725B /* Speech Prompt.swift */,
 				7CB9FA132B706B0100A1725B /* SpeechReturn.swift */,
 			);
 			path = Speech;
@@ -159,15 +118,9 @@
 		7CB9FA142B706B0100A1725B /* Gait Analysis */ = {
 			isa = PBXGroup;
 			children = (
-				7CB9FAB72B70845400A1725B /* App */,
-				7CB9FAA72B7076D100A1725B /* Views */,
-				7CB9FAA42B70767000A1725B /* Video Processing Chain */,
-				7CB9FA9B2B70762300A1725B /* Video Capture */,
-				7CB9FA902B70760200A1725B /* Action Classifier */,
-				7CB9FA872B7075AA00A1725B /* Pose */,
 				7CB9FA152B706B0100A1725B /* GaitBeginRecording.swift */,
 				7CB9FA162B706B0100A1725B /* Gait.swift */,
-				7CB9FAB32B7080E800A1725B /* MainViewControllerWrapper.swift */,
+				2BF1ABB62B71C0620072892E /* GaitReturn.swift */,
 			);
 			path = "Gait Analysis";
 			sourceTree = "<group>";
@@ -186,70 +139,9 @@
 				339B7BB72B6E07D2003A55D1 /* Questionnaire.swift */,
 				7CB9FA082B706AD300A1725B /* Questionnaire_2.swift */,
 				7CB9FA072B706AD300A1725B /* Questionnaire_3.swift */,
-				339B7BB12B6E0128003A55D1 /* Return Page.swift */,
+				2BF1ABB42B71C0350072892E /* QuestionnaireReturn.swift */,
 			);
 			path = Questionnaire;
-			sourceTree = "<group>";
-		};
-		7CB9FA872B7075AA00A1725B /* Pose */ = {
-			isa = PBXGroup;
-			children = (
-				7CB9FA882B7075AA00A1725B /* Pose+Landmark.swift */,
-				7CB9FA892B7075AA00A1725B /* Pose.swift */,
-				7CB9FA8A2B7075AA00A1725B /* Pose+Connection.swift */,
-				7CB9FA8B2B7075AA00A1725B /* Pose+Empty.swift */,
-			);
-			path = Pose;
-			sourceTree = "<group>";
-		};
-		7CB9FA902B70760200A1725B /* Action Classifier */ = {
-			isa = PBXGroup;
-			children = (
-				7CB9FA912B70760200A1725B /* ExerciseClassifier+FrameRate.swift */,
-				7CB9FA922B70760200A1725B /* ActionPrediction.swift */,
-				7CB9FA932B70760200A1725B /* ExerciseClassifier.swift */,
-				7CB9FA942B70760200A1725B /* ExerciseClassifier+PredictAction.swift */,
-				7CB9FA952B70760200A1725B /* ExerciseClassifier+Singleton.swift */,
-			);
-			path = "Action Classifier";
-			sourceTree = "<group>";
-		};
-		7CB9FA9B2B70762300A1725B /* Video Capture */ = {
-			isa = PBXGroup;
-			children = (
-				7CB9FA9C2B70762300A1725B /* VideoCapture.swift */,
-				7CB9FA9D2B70762300A1725B /* AVCaptureDeviceInput+Camera.swift */,
-				7CB9FA9E2B70762300A1725B /* AVCaptureDevice+FrameRate.swift */,
-				7CB9FA9F2B70762300A1725B /* AVCaptureVideoDataOutput+PixelFormat.swift */,
-			);
-			path = "Video Capture";
-			sourceTree = "<group>";
-		};
-		7CB9FAA42B70767000A1725B /* Video Processing Chain */ = {
-			isa = PBXGroup;
-			children = (
-				7CB9FAA52B70767000A1725B /* VideoProcessingChain.swift */,
-			);
-			path = "Video Processing Chain";
-			sourceTree = "<group>";
-		};
-		7CB9FAA72B7076D100A1725B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				7CB9FAA82B7076D100A1725B /* SummaryViewController.swift */,
-				7CB9FAA92B7076D100A1725B /* MainViewController.swift */,
-				7CB9FAAA2B7076D100A1725B /* Main.storyboard */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		7CB9FAB72B70845400A1725B /* App */ = {
-			isa = PBXGroup;
-			children = (
-				7CB9FAB92B70845400A1725B /* LaunchScreen.storyboard */,
-				7CB9FABC2B70845400A1725B /* AppDelegate.swift */,
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,9 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CB9FAAE2B7076D100A1725B /* Main.storyboard in Resources */,
 				7CB9FA5A2B706B0200A1725B /* Preview Assets.xcassets in Resources */,
-				7CB9FABF2B70845400A1725B /* LaunchScreen.storyboard in Resources */,
 				7CB9FA5B2B706B0200A1725B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,64 +214,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CB9FAA62B70767000A1725B /* VideoProcessingChain.swift in Sources */,
 				339B7BB82B6E07D2003A55D1 /* Questionnaire.swift in Sources */,
 				339B7B8E2B6DC9E6003A55D1 /* UXUIApp.swift in Sources */,
-				7CB9FAAC2B7076D100A1725B /* SummaryViewController.swift in Sources */,
-				7CB9FA972B70760200A1725B /* ActionPrediction.swift in Sources */,
+				2BF1ABB52B71C0350072892E /* QuestionnaireReturn.swift in Sources */,
 				7CB9FA3C2B706B0200A1725B /* FingerTap.swift in Sources */,
-				7CB9FAA02B70762300A1725B /* VideoCapture.swift in Sources */,
 				339B7B9C2B6DCA0A003A55D1 /* MainPage.swift in Sources */,
-				339B7BB22B6E0128003A55D1 /* Return Page.swift in Sources */,
 				7CB9FA3B2B706B0200A1725B /* FingerBeginRecording.swift in Sources */,
-				7CB9FA962B70760200A1725B /* ExerciseClassifier+FrameRate.swift in Sources */,
-				7CB9FAA12B70762300A1725B /* AVCaptureDeviceInput+Camera.swift in Sources */,
-				7CB9FAC02B70845400A1725B /* AppDelegate.swift in Sources */,
-				7CB9FAAD2B7076D100A1725B /* MainViewController.swift in Sources */,
-				7CB9FA982B70760200A1725B /* ExerciseClassifier.swift in Sources */,
-				7CB9FA8C2B7075AA00A1725B /* Pose+Landmark.swift in Sources */,
-				7CB9FA8F2B7075AA00A1725B /* Pose+Empty.swift in Sources */,
-				7CB9FA992B70760200A1725B /* ExerciseClassifier+PredictAction.swift in Sources */,
-				7CB9FA402B706B0200A1725B /* SpeechRecording.swift in Sources */,
 				7CB9FA3E2B706B0200A1725B /* Speech Prompt.swift in Sources */,
 				7CB9FA0A2B706AD300A1725B /* Questionnaire_2.swift in Sources */,
-				7CB9FA8E2B7075AA00A1725B /* Pose+Connection.swift in Sources */,
 				7CB9FA3D2B706B0200A1725B /* FingerTapReturn.swift in Sources */,
 				7CB9FA092B706AD300A1725B /* Questionnaire_3.swift in Sources */,
 				339B7BA02B6DCB27003A55D1 /* AboutPage.swift in Sources */,
-				7CB9FAA22B70762300A1725B /* AVCaptureDevice+FrameRate.swift in Sources */,
 				339B7B9E2B6DCAD7003A55D1 /* BeginPage.swift in Sources */,
 				7CB9FA432B706B0200A1725B /* Gait.swift in Sources */,
+				2BF1ABB72B71C0620072892E /* GaitReturn.swift in Sources */,
 				7CB9FA422B706B0200A1725B /* GaitBeginRecording.swift in Sources */,
-				7CB9FA9A2B70760200A1725B /* ExerciseClassifier+Singleton.swift in Sources */,
-				7CB9FAB42B7080E800A1725B /* MainViewControllerWrapper.swift in Sources */,
-				7CB9FAA32B70762300A1725B /* AVCaptureVideoDataOutput+PixelFormat.swift in Sources */,
-				7CB9FA8D2B7075AA00A1725B /* Pose.swift in Sources */,
 				7CB9FA412B706B0200A1725B /* SpeechReturn.swift in Sources */,
 				7CB9FA3F2B706B0200A1725B /* Speech.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7CB9FAAA2B7076D100A1725B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7CB9FAAB2B7076D100A1725B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7CB9FAB92B70845400A1725B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7CB9FABA2B70845400A1725B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		339B7B962B6DC9E7003A55D1 /* Debug */ = {
