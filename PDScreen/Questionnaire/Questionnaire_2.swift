@@ -39,11 +39,11 @@ struct Questionnaire_2: View {
                     Text("Yes")
                         .frame(width: 500 , height: 70, alignment: .center)
                 }
-                .foregroundColor(didTap1 ? Color.orange : Color.white)
-                .background(didTap1 ? Color.orange.opacity(0.2) : Color.orange)
+                .foregroundColor(didTap1 ? Color.donaldDuck : Color.white)
+                .background(didTap1 ? Color.donaldDuck.opacity(0.2) : Color.donaldDuck)
                 .font(.title)
                 .fontWeight(.heavy)
-                .cornerRadius(20)
+                .cornerRadius(15)
                 .padding()
                 
                 Button(action: {
@@ -55,11 +55,11 @@ struct Questionnaire_2: View {
                     Text("No")
                         .frame(width: 500 , height: 70, alignment: .center)
                 }
-                .foregroundColor(didTap2 ? Color.orange : Color.white)
-                .background(didTap2 ? Color.orange.opacity(0.2) : Color.orange)
+                .foregroundColor(didTap2 ? Color.donaldDuck : Color.white)
+                .background(didTap2 ? Color.donaldDuck.opacity(0.2) : Color.donaldDuck)
                 .font(.title)
                 .fontWeight(.heavy)
-                .cornerRadius(20)
+                .cornerRadius(15)
                 .padding()
                 
                 Button(action: {
@@ -71,11 +71,11 @@ struct Questionnaire_2: View {
                     Text("Not sure")
                         .frame(width: 500 , height: 70, alignment: .center)
                 }
-                .foregroundColor(didTap3 ? Color.orange : Color.white)
-                .background(didTap3 ? Color.orange.opacity(0.2) : Color.orange)
+                .foregroundColor(didTap3 ? Color.donaldDuck : Color.white)
+                .background(didTap3 ? Color.donaldDuck.opacity(0.2) : Color.donaldDuck)
                 .font(.title)
                 .fontWeight(.heavy)
-                .cornerRadius(20)
+                .cornerRadius(15)
                 .padding()
                 
                 Button(action: {
@@ -87,11 +87,11 @@ struct Questionnaire_2: View {
                     Text("Prefer not to answer")
                         .frame(width: 500 , height: 70, alignment: .center)
                 }
-                .foregroundColor(didTap4 ? Color.orange : Color.white)
-                .background(didTap4 ? Color.orange.opacity(0.2) : Color.orange)
+                .foregroundColor(didTap4 ? Color.donaldDuck : Color.white)
+                .background(didTap4 ? Color.donaldDuck.opacity(0.2) : Color.donaldDuck)
                 .font(.title)
                 .fontWeight(.heavy)
-                .cornerRadius(20)
+                .cornerRadius(15)
                 .padding()
                 
                 Text("   ")
@@ -104,7 +104,7 @@ struct Questionnaire_2: View {
                 .foregroundColor(.black)
                 .background(.white)
                 .font(.title)
-                .cornerRadius(30)
+                .cornerRadius(15)
                 .padding()
                 .navigationBarTitle("", displayMode: .inline)
                 .navigationBarHidden(true)

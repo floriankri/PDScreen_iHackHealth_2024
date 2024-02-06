@@ -178,7 +178,7 @@ struct Speech_Prompt: View {
                 .padding()
                
 
-                RoundedRectangle(cornerRadius: 10)
+                RoundedRectangle(cornerRadius: 15)
                     .foregroundColor(.secondary) // You can change the color as desired
                     .padding()
                     .overlay(
@@ -190,21 +190,39 @@ struct Speech_Prompt: View {
                             .fontWeight(.medium)
                             .padding()
                             .foregroundColor(.white) // You can change the text color as desired
-                                .multilineTextAlignment(.leading)
+                                //.multilineTextAlignment(.leading)
                                 .padding()
                             
                             Text("Transcribed Text:")
+                                .foregroundColor(.white)
 
-                            TextEditor(text: $viewModel.transcribedText)
-
-                            if let result = viewModel.transcriptionResult {
-                                Text("Transcription Result: \(result == 0 ? "Success" : "Failure")")
-                            }
                         }
                     )
                     .frame(width: 700, height:200) // Adjust the frame size as needed
+                TextEditor(text: $viewModel.transcribedText)
+                    .frame(width: 700 , height: 50, alignment: .center)
+                    .cornerRadius(15)
+                
                 Spacer()
-                    .frame(height: 170.0)
+                
+                ZStack{
+                    Text("Transcription Result:")
+                        .frame(width: 300 , height: 50, alignment: .center)
+                        .font(.system(size: 20))
+                        .background(.white)
+                        .foregroundColor(.black)
+                        .cornerRadius(15)
+                    
+                    if let result = viewModel.transcriptionResult {
+                        Text("Transcription Result: \(result == 0 ? "Success" : "Failure")")
+                            .frame(width: 300 , height: 50, alignment: .center)
+                            .font(.system(size: 20))
+                            .background(.white)
+                            .foregroundColor(.black)
+                            .cornerRadius(15)
+                    }
+                }
+                Spacer()
                 
                 Button(action: {
                     if viewModel.isRecording {
