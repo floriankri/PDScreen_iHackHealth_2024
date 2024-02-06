@@ -45,7 +45,8 @@ Please proceed to the Finger Tap Test.
                     
                 }
                 .navigationBarTitle("", displayMode: .inline)
-                Spacer()
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
             }
         }
     }

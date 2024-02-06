@@ -24,6 +24,8 @@ struct Questionnaire_2: View {
             
             VStack {
                 
+                Spacer()
+                
                 Text("Have you ever been told, or suspected yourself, that you seem to &quot;act out your dreams while asleep (for example punching, flailing your arms in the air, making running movements, etc.)?")
                     .font(.largeTitle)
                     .multilineTextAlignment(.center)
@@ -94,18 +96,19 @@ struct Questionnaire_2: View {
                 .cornerRadius(15)
                 .padding()
                 
-                Text("   ")
+                Spacer()
                 
                 NavigationLink(destination: Questionnaire_3())
                 {
                     Text("Continue")
-                        .frame(width: 200 , height: 50, alignment: .center)
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                        .padding(40)
+                        .frame(width: 250, height: 90)
+                        .background(.white)
+                        .cornerRadius(15)
                 }
-                .foregroundColor(.black)
-                .background(.white)
-                .font(.title)
-                .cornerRadius(15)
-                .padding()
                 .navigationBarTitle("", displayMode: .inline)
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)

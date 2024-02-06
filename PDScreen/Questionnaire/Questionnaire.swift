@@ -27,7 +27,9 @@ struct Questionnaire: View {
                 
                 VStack {
                     
-                    Text("Do you have a diagnosis of REM behavior disorder, also known as RBD?")
+                    Spacer()
+                    
+                    Text("Do you have a diagnosis of REM behavior disorder, also known as RBD?\n\n")
                         .font(.largeTitle)
                         .multilineTextAlignment(.center)
                         .padding()
@@ -99,18 +101,19 @@ struct Questionnaire: View {
                     .cornerRadius(15)
                     .padding()
                     
-                    Text("   ")
+                    Spacer()
                     
                     NavigationLink(destination: Questionnaire_2())
                     {
                         Text("Continue")
-                            .frame(width: 200 , height: 50, alignment: .center)
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
+                            .padding(40)
+                            .frame(width: 250, height: 90)
+                            .background(.white)
+                            .cornerRadius(15)
                     }
-                    .foregroundColor(.black)
-                    .background(.white)
-                    .font(.title)
-                    .cornerRadius(15)
-                    .padding()
                     .navigationBarTitle("", displayMode: .inline)
                     .navigationBarHidden(true)
                     .navigationBarBackButtonHidden(true)

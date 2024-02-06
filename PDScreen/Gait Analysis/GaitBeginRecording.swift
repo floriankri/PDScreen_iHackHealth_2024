@@ -37,7 +37,7 @@ struct GaitBeginRecording: View {
                 .padding(.top, 13.0)
                 
 
-                RoundedRectangle(cornerRadius: 10)
+                RoundedRectangle(cornerRadius: 15)
                     .foregroundColor(.secondary) // You can change the color as desired
                     .padding(10.0)
                     .overlay(

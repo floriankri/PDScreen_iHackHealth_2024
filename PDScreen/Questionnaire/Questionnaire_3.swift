@@ -25,7 +25,9 @@ struct Questionnaire_3: View {
             
             VStack {
                 
-                Text("Do you have any problems with your sense of smell?")
+                Spacer()
+                
+                Text("Do you have any problems with your sense of smell?\n\n\n")
                     .font(.largeTitle)
                     .multilineTextAlignment(.center)
                     .padding()
@@ -95,18 +97,19 @@ struct Questionnaire_3: View {
                 .cornerRadius(15)
                 .padding()
                 
-                Text("   ")
+                Spacer()
                 
                 NavigationLink(destination: QuestionnaireReturn())
                 {
-                    Text("Submit")
-                        .frame(width: 200 , height: 50, alignment: .center)
+                    Text("Continue")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                        .padding(40)
+                        .frame(width: 250, height: 90)
+                        .background(.white)
+                        .cornerRadius(15)
                 }
-                .foregroundColor(.black)
-                .background(.white)
-                .font(.title)
-                .cornerRadius(15)
-                .padding()
                 .navigationBarTitle("", displayMode: .inline)
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)

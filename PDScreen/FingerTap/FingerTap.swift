@@ -49,7 +49,7 @@ struct FingerTap: View {
                 .padding()
                 Spacer()
 
-                RoundedRectangle(cornerRadius: 10)
+                RoundedRectangle(cornerRadius: 15)
                     .foregroundColor(.secondary) // You can change the color as desired
                     .padding()
                     .overlay(
@@ -79,7 +79,7 @@ struct FingerTap: View {
                         .padding(40)
                         .frame(width: 250, height: 90)
                         .background(Color.donaldDuck)
-                        .cornerRadius(12)
+                        .cornerRadius(15)
                 }
                 .navigationBarTitle("", displayMode: .inline)
                 Spacer()
