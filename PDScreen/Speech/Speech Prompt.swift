@@ -163,7 +163,7 @@ struct Speech_Prompt: View {
             
             VStack{
                 Spacer()
-                    .frame(height: 200.0)
+                    .frame(height: 100)
                 HStack{
                     Spacer()
                     Image("speech")
@@ -178,7 +178,8 @@ struct Speech_Prompt: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                 }
-                .padding()
+                Spacer()
+                .frame(height: 50)
                
 
                 RoundedRectangle(cornerRadius: 15)
@@ -189,12 +190,12 @@ struct Speech_Prompt: View {
                             Text("""
                                Describe your plans for the rest of today.
                                """)
-                            .font(.system(size: 30))
-                            .fontWeight(.medium)
-                            .padding()
-                            .foregroundColor(.white) // You can change the text color as desired
-                                //.multilineTextAlignment(.leading)
-                                .padding()
+                         .font(.system(size: 30))
+                         .fontWeight(.medium)
+                         .padding()
+                         .foregroundColor(.white) // You can change the text color as desired
+                             .multilineTextAlignment(.leading)
+                             .padding()
                             
 //                            Text("Transcribed Text:")
 //                                .foregroundColor(.white)
@@ -244,7 +245,7 @@ struct Speech_Prompt: View {
                         
                         if let result = viewModel.transcriptionResult {
                             Text("Transcription Result: \(result == 0 ? "Success" : "Failure")")
-                                .frame(width: 300 , height: 50, alignment: .center)
+                                .frame(width: 700 , height: 50, alignment: .center)
                                 .font(.system(size: 20))
                                 .background(.white)
                                 .foregroundColor(.black)
