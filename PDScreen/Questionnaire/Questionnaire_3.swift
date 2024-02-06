@@ -112,9 +112,6 @@ struct Questionnaire_3: View {
                 .navigationBarBackButtonHidden(true)
             }
         }
-        .navigationDestination(isPresented: $QsToHome) {
-            QuestionnaireReturn()
-        }
         }
     }
 

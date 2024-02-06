@@ -50,3 +50,36 @@ struct BetterNavigationLink<Label: View, Destination: View>: View {
         }
     }
 }
+
+struct NavigationButtonWithIcon: View {
+    @State var buttonText: String
+    @State var buttonImage: String
+    
+    var body: some View{
+        VStack{
+            HStack {
+                Spacer()
+                Image(systemName: buttonImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.white)
+                    .frame(width: 150, height: 150)
+                Spacer()
+                    .frame(width: 50.0)
+                
+                                        
+            }
+            HStack{
+                Spacer()
+                Text(buttonText)
+                    .font(.largeTitle)
+                    .fontWeight(.medium)
+                    .foregroundColor(Color.white)
+                    .underline()
+                Spacer()
+                    .frame(width: 30.0)
+            }
+        }
+    }
+    
+}

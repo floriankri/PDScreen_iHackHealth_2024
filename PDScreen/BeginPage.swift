@@ -12,7 +12,7 @@ struct BeginPage: View {
                     //hello user
                     HStack {
                         Spacer() // Push to the right
-                        Text("Hello User!")
+                        Text("Hello Oski!")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .multilineTextAlignment(.trailing)

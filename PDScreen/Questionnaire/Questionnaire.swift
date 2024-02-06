@@ -115,11 +115,7 @@ struct Questionnaire: View {
                     .navigationBarHidden(true)
                     .navigationBarBackButtonHidden(true)
                 }
-            }
-            .navigationDestination(isPresented: $toPage2) {
-                Questionnaire_2()
-            }
-            }
+            }            }
         }
     
 #Preview {
